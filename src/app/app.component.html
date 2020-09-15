@@ -1,0 +1,6 @@
+<div class="app p-4 container-fluid">
+  <app-home *ngIf="login;else loginPage" ></app-home>
+  <ng-template #loginPage>
+    <app-login (eventEmitter)="getLoginResponse($event)"></app-login>
+  </ng-template>
+</div>

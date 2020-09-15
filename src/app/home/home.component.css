@@ -1,0 +1,23 @@
+.btn-circle.btn-md { 
+    width: 50px; 
+    height: 50px; 
+    padding: 7px 10px; 
+    border-radius: 25px; 
+    font-size: 10px; 
+    text-align: center; 
+    background: black;
+}
+.apple{
+    background: pink;
+}
+.orange{
+    background: orange;
+}
+.grapes{
+    background: darkblue;
+}
+.body{
+    height: 200px;
+    margin-left: 15px;
+    border: 1px solid gray;
+}

@@ -1,0 +1,14 @@
+<div class="loginWrap col-md-4 offset-md-4">
+    <h1 class="text-center mt-5">LOGIN</h1>
+    <div class="col col-md-10 mb-3">
+        <input type="text" name="Username" placeholder="Username" class="form-control" [(ngModel)]="username"
+        />
+    </div>
+    <div class="col col-md-10 mb-3">
+        <input type="password" name="Password" placeholder="Password" class="form-control" [(ngModel)]="password"
+        />
+    </div>
+    <div class="text-center mb-5">
+        <button (click)="validate()" class="btn btn-primary">Login</button>
+    </div>
+</div>

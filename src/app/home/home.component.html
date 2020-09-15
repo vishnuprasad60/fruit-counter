@@ -1,0 +1,28 @@
+<div class="col-md-12 row">
+    <ng-container *ngFor="let fruit of fruits">
+        <div class="col-md-3 body" 
+        [ngClass]="{'apple': fruit.name === 'apple',
+        'orange':fruit.name === 'orange',
+        'grapes':fruit.name === 'grapes' }">
+            <h2 class="text-center text-white mt-3">
+                {{fruit.name|uppercase}}
+            </h2>
+            <h3 class="text-center text-white mt-3">
+                {{fruit.count}}
+            </h3>
+            <div class="text-center">
+                <button class="btn-circle text-white btn-md mt-3" (click)="onAdd(fruit.id)">+</button>
+                <button class="btn-circle text-white btn-md ml-2 mt-3" (click)="onRemove(fruit.id)">-</button>
+            </div>
+        </div>
+    </ng-container>
+    <div class="col-md-4 mx-auto body mt-5">
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" [attr.aria-valuenow]="count" 
+            aria-valuemin="0" aria-valuemax="30" [style.width.%]="count*3.334">>
+            </div>
+        </div>
+        <h2 class="text-center mt-3">BASKET</h2>
+    </div>
+    <button class="btn btn-primary" click="getLocation()">Location</button>
+</div>

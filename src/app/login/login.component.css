@@ -1,0 +1,8 @@
+.app {
+    min-height: 100vh;
+  }
+  .loginWrap{
+      margin-top: 40px;
+      background: lightgray;
+      border: 1px solid gray;
+  }
